@@ -1,0 +1,27 @@
+<p>
+  signup works!
+</p>
+<form>
+<div>
+  <label>
+    Email:
+    <input type="email" required [(ngModel)]="email" name="email" #em="ngModel"/>
+    <div [hidden]="em.valid || em.prestine">Email is required</div>
+  </label>
+    <label>
+    Password:
+    <input type="password" required [(ngModel)]="password1" name="password1" #pw1="ngModel" />
+    <div [hidden]="pw1.valid || pw1.prestine">Password is required</div>
+  </label>
+  <label>
+    Confirm Password:
+    <input type="password" required [(ngModel)]="password2" name="password2" #pw2="ngModel" />
+    <div [hidden]="pw2.valid || pw2.prestine">Confirm Password is required</div>
+    <div [hidden]="!passwordMatch">Passwords don't match!</div>
+  </label> 
+</div>
+<div>
+  <input type="button" (click)="signup()" value="Sign Up!" />
+  <input type="button" (click)="cancel()" value="Cancel" />
+</div>
+</form>

@@ -1,0 +1,19 @@
+<p>
+  hero-list works! {{heroList.length}}
+</p>
+<div>
+  <input *ngIf="userLoggedIn" type="button" (click)="addNewHero()" value="Add Hero"/>
+</div>
+<div class="listPanel">
+  <li>
+    <ul *ngFor="let hero of heroList">
+      <a (click)="currentHero = hero" href="javascript:void(0)">{{hero.name}}</a>
+    </ul>
+  </li>
+</div>
+<div class="detailsPanel" *ngIf="currentHero">
+  <input type="hidden" [ngModel]="currentHero.id" />
+  <label>Name: <input type="text" [(ngModel)]="currentHero.name" #heroname="ngModel"></label>
+  <label>Description: <input type="text" [(ngModel)]="currentHero.description" #herodes="ngModel"></label>
+  <input type="button" (click)="saveHero()" value="Save" />
+</div>

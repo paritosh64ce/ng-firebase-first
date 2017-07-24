@@ -1,0 +1,15 @@
+.nav-bar{
+    width: inherit;
+    height: 20px;
+    background-color: #000;
+    color: #DDD;
+    margin: 0;
+    padding: 10px;
+}
+
+a { 
+    text-decoration: none; 
+    color: #DDD;
+    padding: 0 5px 0 5px;
+}
+a:hover { text-decoration: underline; }

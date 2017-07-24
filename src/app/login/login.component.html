@@ -1,0 +1,19 @@
+<p>
+  login works!
+</p>
+<form>
+<div>
+  <label>
+    Email:
+    <input type="email" required [(ngModel)]="email" name="email" #em="ngModel"/>
+    <!-- <div [hidden]="em.valid || em.prestine">Email is required</div> -->
+  </label>
+    <label>
+    Password:
+    <input type="password" required [(ngModel)]="password" name="password" #pw="ngModel" />
+    <!-- <div [hidden]="pw.valid || pw.prestine">Password is required</div> -->
+  </label>
+  <input type="button" (click)="login()" value="Login" />
+  <input type="button" (click)="signup()" value="Sign Up!" />
+  </div>
+</form>

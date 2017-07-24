@@ -1,3 +1,15 @@
+## This is still WIP
+
+# How I did
+
+1. ng init ng-firebse-first --routing
+2. ng serve
+3. ng g c nav-bar (update styles and markup for navigation bar)
+4. ng g s UserService (update references in app.module)
+5. npm install firebase --save
+6. ng g s shared/hero
+
+
 # NgFirebaseFirst
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.

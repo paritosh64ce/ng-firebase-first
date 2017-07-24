@@ -1,0 +1,11 @@
+<div class="nav-bar">
+  <a class="pull-left" [routerLink]="['']">NG-FIREBASE-HEAD-FIRST!</a>
+
+  <div class="pull-right">
+    <a class="" [routerLink]="['/hero-list']">Hero List</a>
+
+    <a class="" *ngIf="userloggedIn">{{userEmail}}</a>
+    <a class="" *ngIf="userloggedIn" [routerLink]="['/signout']">Sign out!</a>
+    <a class="" *ngIf="!userloggedIn" [routerLink]="['/login']">Login</a>
+  </div>
+</div>

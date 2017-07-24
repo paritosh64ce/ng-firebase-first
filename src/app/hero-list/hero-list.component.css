@@ -1,0 +1,9 @@
+.listPanel{
+    width: 30%;
+    float: left;
+    border: 1px solid #DDD;
+}
+.detailsPanel{
+    float: left;
+    border: 1px solid #DDD;
+}

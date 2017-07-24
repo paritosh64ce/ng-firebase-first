@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+html{ font-family: Verdana, Geneva, Tahoma, sans-serif }
+
+.pull-left { float: left; }
+.pull-right { float: right; }
